@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+/* Resuable Code */
+/*  */
+
+:root {
+    --heading: rgb(0 10 45);
+    --para: #777777;
+    --helper: #8490ff;
+    --helper-tint: #f6370c;
+    --bg: rgb(249 249 255);
+    /* --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%); */
+    --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+    color: var(--heading);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h2{
+    color: var(--heading);
+}
+
+p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    background: var(--helper-tint);
+
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 20px 20px 0px rgba(33, 34, 36, 0.3);
+    color: rgb(255 255 255);
+}
+
+.section {
+    padding: 7rem 0;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.img{
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    gap: 9rem;
+  }
+  
+  .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/*  */
+/* Header Section */
+/*  */
+
+
+.container-nav{
+    padding: 1rem 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+header span a{
+    background-color: blue;
+    padding: 1.6rem 3.2rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.logo{
+    margin-right: 0.5rem;
+}
+
+.navbar{
+    color: black;
+}
+
+.list{
+    display: flex;
+}
+
+.list li{
+    margin: 0 1rem;
+}
+
+.t-btn{
+    color: white;
+}
+
+/*  */
+/* Images Section */
+/*  */
+
+
+.t-img{
+    display: flex;
+    gap: 11rem;
+}
+
+.img1, .img2{    
+    width: 100%;
+    height: 300px;
+    border-radius: 9px;
+}
+
+
+/*  */
+/* Main Section */
+/*  */
+
+h1{
+    font-size: 9rem;
+}
+
+.main-para{
+    margin: 1rem 0;
+    max-width: 70%;
+}
+
+.f-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* padding: 1rem; */
+    color: white;
+}
+
+/*  */
+/* trust Section */
+/*  */
+
+.trust{
+    background: #0050f1;
+    padding: 5rem;
+}
+
+.two h2, .two p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.two h2{
+    font-size: 4rem;
+}
+
+.emojis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    font-size: 6rem;
+}
+
+/*  */
+/*  */
+/*  */
+
+.r-section{
+    background-color: var(--bg);
+}
+
+.prop h2{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.p-img{
+    display: flex;
+    justify-content: center;
+    gap: 13rem;
+    border-radius: 9px;
+}
+
+.c-img{
+    border-radius: 9px;
+    width: 100%;
+}
+
+.p-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+/*  */
+/*  */
+/*  */
+
+/* .r-views{
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 0 5rem 0;
+} */
+
+.review{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+.r-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.r-img img{
+    display: inline-block;
+    max-width: 20%;
+    box-shadow: -1rem -1rem 0rem 0rem var(--helper);
+}
+
+.view{
+    max-width: 50%;
+}
+
+.view h2{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.view p{
+    max-width: 70%;
+}
+.view span{
+    font-size: 4rem;
+}
+
+/*  */
+/* Botton Section */
+/*  */
+
+.bottom{
+    margin-bottom: 6rem;
+}
+
+.b-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.b-img img{
+    border-radius: 9px;
+    height: 250px;
+}
+
+.bottom-data{
+    max-width: 80%;
+}
+
+.bottom-data h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.bottom-data p{
+    max-width: 90%;
+}
+
+.b-btn{
+    display: flex;
+    gap: 3rem;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.c-btn{
+    background-color: #0050f1;
+}
+
+/*  */
+/* Register Button  */
+/*  */
+
+.register-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    max-width: 40%;
+    height: 200px;
+    background-color: black;
+    border-radius: 9px;
+    padding: 0 auto;
+}
+
+.register{
+    margin: 0 auto;
+}
+
+.register-section p{
+    margin-top: 1.5rem;
+}
+
+.r-btn{
+    display: flex;
+    font-size: 3rem;
+    gap: 4rem;
+}
